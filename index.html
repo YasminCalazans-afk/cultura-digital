@@ -4,9 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cultura Digital</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f7f7f7;
@@ -14,7 +15,7 @@
     }
 
     header {
-      background-image: url('https://via.placeholder.com/1920x400/0000FF/808080?text=Cultura+Digital');
+      background-image: url('https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=1920&q=80');
       background-size: cover;
       background-position: center;
       padding: 60px 0;
@@ -99,6 +100,26 @@
       background-color: #2980b9;
     }
 
+    .card {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
     footer {
       background-color: #2c3e50;
       color: white;
@@ -112,7 +133,6 @@
   </style>
 </head>
 <body>
-
   <header>
     <h1>Cultura Digital</h1>
     <p>Plataforma de Apoio a Grupos Culturais Locais</p>
@@ -121,7 +141,7 @@
   <nav>
     <a href="#inicio">Início</a>
     <a href="#grupos">Grupos Culturais</a>
-    <a href="#agenda">Agenda de Eventos</a>
+    <a href="#agenda">Agenda</a>
     <a href="#contato">Contato</a>
   </nav>
 
@@ -133,11 +153,27 @@
 
     <section id="grupos">
       <h2>Grupos Culturais</h2>
-      <ul>
-        <li><strong>Grupo Teatral Expressão</strong> – Um grupo de teatro comunitário que traz encenações sobre questões sociais.</li>
-        <li><strong>Arte em Foco</strong> – Coletivo de artistas plásticos locais que exploram a arte em diversos meios.</li>
-        <li><strong>Banda Raízes do Cerrado</strong> – Banda local que traz a música tradicional e regional para o público jovem.</li>
-      </ul>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=60" alt="Grupo Teatral">
+        <div class="card-content">
+          <h3>Grupo Teatral Expressão</h3>
+          <p>Grupo comunitário que traz encenações sobre questões sociais.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=800&q=60" alt="Arte em Foco">
+        <div class="card-content">
+          <h3>Arte em Foco</h3>
+          <p>Coletivo de artistas plásticos que exploram diversas formas de expressão.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1508973379407-113c84a1ba6c?auto=format&fit=crop&w=800&q=60" alt="Banda Raízes do Cerrado">
+        <div class="card-content">
+          <h3>Banda Raízes do Cerrado</h3>
+          <p>Música regional com identidade cultural forte e envolvente.</p>
+        </div>
+      </div>
     </section>
 
     <section id="agenda">
@@ -159,6 +195,5 @@
   <footer>
     <p>&copy; 2025 Cultura Digital. Todos os direitos reservados.</p>
   </footer>
-
 </body>
 </html>
